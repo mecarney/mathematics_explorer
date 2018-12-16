@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractal.h"
 
 void		change_addr(t_ftl *ftl, int x, int y, int color)
 {

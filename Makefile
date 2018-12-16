@@ -1,4 +1,4 @@
-NAME = fractol
+NAME = fractal
 
 SRCS = main.c extras.c equations.c
 

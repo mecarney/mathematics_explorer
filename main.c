@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mcarney <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/10 06:59:04 by mcarney           #+#    #+#             */
-/*   Updated: 2018/08/10 06:59:05 by mcarney          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "fractol.h"
+#include "fractal.h"
 
 void			*work(void *arguments)
 {
@@ -86,12 +74,12 @@ int				main(int ac, char **av)
 	t_ftl		ftl;
 
 	if (ac != 2)
-		ft_return_error("usage: ./fractol <fractal set>\n\
+		ft_return_error("usage: ./fractal <fractal set>\n\
 		(availble sets: mandelbrot, julia, tricorn, burning ship)");
 	ftl.max = 1000;
 	ftl.maxi = 1000;
 	ftl.mlx = mlx_init();
-	ftl.win = mlx_new_window(ftl.mlx, ftl.max + 200, ftl.max + 170, "Fractol");
+	ftl.win = mlx_new_window(ftl.mlx, ftl.max + 200, ftl.max + 170, "Fractal");
 	decorate_win(ftl.mlx, ftl.win, ftl.max);
 	if (ft_strcmp(av[1], "mandelbrot") == 0)
 		ftl_defaults(&ftl, 0);
@@ -101,6 +89,9 @@ int				main(int ac, char **av)
 		ftl_defaults(&ftl, 2);
 	else if (ft_strcmp(av[1], "burning ship") == 0)
 		ftl_defaults(&ftl, 3);
+	else
+		ft_return_error("usage: ./fractal <fractal set>\n\
+		(availble sets: mandelbrot, julia, tricorn, burning ship)");
 	mlx_hook(ftl.win, 2, 0, key_press_hook, &ftl);
 	mlx_mouse_hook(ftl.win, deal_mouse, &ftl);
 	mlx_hook(ftl.win, 6, 0, ft_motion, &ftl);
