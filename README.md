@@ -6,7 +6,7 @@ This is a simple program to explore the visualization of fractals. Fractals are 
 
 Run `make`.
 
-Run `./fractal <fractal set>`\n
+Run `./fractal <fractal set>`\
 (availble sets: mandelbrot, julia, tricorn, burning ship).
 
 ## Example
