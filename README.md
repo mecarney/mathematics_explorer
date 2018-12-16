@@ -10,3 +10,4 @@ Run `./fractal <fractal set>`\
 (availble sets: mandelbrot, julia, tricorn, burning ship).
 
 ## Example
+![Mandelbrot Example](https://github.com/mecarney/mathematics_explorer/blob/master/mandelbrot.png)
