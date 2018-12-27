@@ -10,6 +10,5 @@ Run `./fractal <fractal set>`\
 (availble sets: mandelbrot, julia, tricorn, burning ship).
 
 ## Examples
-![Mandelbrot Example](https://github.com/mecarney/mathematics_explorer/blob/master/mandelbrot.png)
-![Mandelbrot.gif Example](https://github.com/mecarney/mathematics_explorer/blob/master/mandelbrot.gif)
+<img src="https://github.com/mecarney/mathematics_explorer/blob/master/mandelbrot.png" width="433" height="433" title="Mandelbrot Example"> <img src="https://github.com/mecarney/mathematics_explorer/blob/master/mandelbrot.gif" width="433" height="433" title="Mandelbrot.gif Example">
 ![Julia.gif Example](https://github.com/mecarney/mathematics_explorer/blob/master/julia.gif)
